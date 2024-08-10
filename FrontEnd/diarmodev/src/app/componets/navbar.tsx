@@ -16,7 +16,7 @@ const Navbar = () => {
                             width={50}
                             height={50}
                         />
-                        <Link href={"#"}
+                        <Link href={"/"}
                             className="text-white font-bold text-xl">
                             DiArMo dev
                         </Link>

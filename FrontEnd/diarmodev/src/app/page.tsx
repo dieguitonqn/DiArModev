@@ -22,10 +22,13 @@ export default function Home() {
 
       <div className="flex flex-col mt-12">
         <p className="flex max-w-xl text-xl">
-          Mi nombre es Diego Morales. Soy ingeniero electrónico y un apasionado por el desarrollo de soluciones web para toda clase de problematicas.
+          Mi nombre es Diego Morales. Soy ingeniero electrónico y un apasionado por el desarrollo de soluciones web integrales para toda clase de problematicas.
+        </p>
+        <p className="flex max-w-xl text-xl"  >
+          Me especializo particularmente en el Stack NextJS-FastAPI-MongoDB
         </p>
       </div>
-      <div className="flex flex-row space-x-2 mt-10">
+      <div className="flex flex-row space-x-10 mt-10">
         <Link
           className=" flex border-2 items-center border-slate-800 hover:shadow-lg  hover:shadow-slate-700 bg-black p-3 rounded-md text-slate-400 font-semibold text-xl"
           href="https://www.linkedin.com/in/diego-morales-96417220/"
@@ -43,6 +46,27 @@ export default function Home() {
             </svg>
           </span>
           LinkedIn
+
+
+        </Link>
+
+
+        <Link
+          className=" flex border-2 items-center border-slate-800 hover:shadow-lg  hover:shadow-slate-700 bg-black p-3 rounded-md text-slate-400 font-semibold text-xl"
+          href="/CV_DiegoMorales.pdf"
+          target="_blank"
+        >
+          <span className="[&>svg]:h-5 [&>svg]:w-5 m-1 border-2 border-slate-400 p-1 rounded-md bg-slate-500">
+            <Image
+              src="/curriculum.svg"
+              alt="CV"
+              width={20}
+              height={20}
+            />
+          </span>
+
+
+          CV
 
 
         </Link>
@@ -75,30 +99,41 @@ export default function Home() {
         Proyectos
       </div>
       <div className="flex flex-wrap items-start">
-        <Card
-          titulo="Lechuza"
-          source="/lechuza.png"
-          alt="lechuza"
-          text="Sistema de gestion documental hecho enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
+        <Link href="/proyectos/lechuza"
+          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
+          <Card
+            titulo="Lechuza"
+            source="/lechuza.png"
+            alt="lechuza"
+            text="Sistema de gestion documental hecho enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
+            php js mariadb bootstrap
 
-        />
-        <Card
-          titulo="Lechuipe"
-          source="/lechuza.png"
-          alt="lechuza"
-          text="Sistema de gestion de información de red privada. Realizado enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
+          />
+        </Link>
 
-        />
-        <Card
-          titulo="LechuCAO"
-          source="/lechuza.png"
-          alt="lechuza"
-          text="Sistema de gestión documental CAO. Realizado con NextJS para el frontEnd y Fastapi para el BackEnd. Como base de datos se usó MongoDB"
-          
-        />
-        
-        
-        
+        <Link href="/proyectos/lechuza"
+          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
+          <Card
+            titulo="Lechuipe"
+            source="/lechuipe.png"
+            alt="lechuza"
+            text="Sistema de gestion de información de red privada. Realizado enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
+            php js mariadb bootstrap
+          />
+        </Link>
+        <Link href="/proyectos/lechuza"
+          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
+          <Card
+            titulo="LechuCAO"
+            source="/lechucao.png"
+            alt="lechuza"
+            text="Sistema de gestión documental CAO. Realizado con NextJS para el frontEnd y Fastapi para el BackEnd. Como base de datos se usó MongoDB"
+            fastapi nextjs mongodb tailwind
+
+          />
+        </Link>
+
+
       </div>
 
     </main>

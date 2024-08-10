@@ -13,6 +13,9 @@ interface Props {
     mariadb?: boolean
     nextjs?: boolean
     fastapi?: boolean
+    js?: boolean
+    bootstrap?: boolean
+    tailwind?: boolean
 
 }
 export default function Card(props: Props) {
@@ -21,6 +24,7 @@ export default function Card(props: Props) {
             <div className="text-2xl">
                 {props.titulo}
             </div>
+
             <Image
                 src={props.source}
                 alt={props.alt}
@@ -28,34 +32,88 @@ export default function Card(props: Props) {
                 height={400}
             />
             <div className="flex">
-                <Image
-                    className="m-2"
-                    src="/python-logo-only.svg"
-                    height={20}
-                    width={20}
-                    alt="py"
-                />
-                <Image
-                    className="m-2"
-                    src="/php-svgrepo-com.svg"
-                    height={20}
-                    width={20}
-                    alt="py"
-                />
-                <Image
-                    className="m-2"
-                    src="/js.svg"
-                    height={20}
-                    width={20}
-                    alt="py"
-                />
-                <Image
-                    className="m-2 bg-slate-200"
-                    src="/nextjs.svg"
-                    height={20}
-                    width={20}
-                    alt="py"
-                />
+                {props.python && (
+                    <Image
+                        className="m-2"
+                        src="/python-logo-only.svg"
+                        height={20}
+                        width={20}
+                        alt="py"
+                    />
+                )}
+                {props.php && (
+                    <Image
+                        className="m-2"
+                        src="/php-svgrepo-com.svg"
+                        height={20}
+                        width={30}
+                        alt="py"
+                    />
+                )}
+                {props.js && (
+                    <Image
+                        className="m-2"
+                        src="/js.svg"
+                        height={20}
+                        width={30}
+                        alt="py"
+                    />
+                )}
+                {props.nextjs && (
+                    <Image
+                        className="m-2 "
+                        src="/nextjs2.png"
+                        height={10}
+                        width={30}
+                        alt="py"
+
+                    />
+                )}
+                {props.fastapi && (
+                    <Image
+                        className="m-2 "
+                        src="/fastapi2.png"
+                        height={20}
+                        width={30}
+                        alt="py"
+                    />
+                )}
+                {props.mongodb && (
+                    <Image
+                        className="m-2 "
+                        src="/mongodb.svg"
+                        height={10}
+                        width={30}
+                        alt="py"
+                    />
+                )}
+                {props.mariadb && (
+                    <Image
+                        className="m-2 "
+                        src="/mariadb2.png"
+                        height={30}
+                        width={50}
+                        alt="py"
+                    />
+                )}
+                {props.bootstrap && (
+                    <Image
+                        className="m-2 "
+                        src="/Bootstrap_logo.svg"
+                        height={10}
+                        width={30}
+                        alt="py"
+                    />
+                )}
+                {props.tailwind && (
+                    <Image
+                        className="m-2 "
+                        src="/tailwind.png"
+                        height={10}
+                        width={30}
+                        alt="py"
+                    />
+                )}
 
             </div>
 
