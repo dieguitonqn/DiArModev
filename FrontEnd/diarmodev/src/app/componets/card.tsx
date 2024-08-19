@@ -31,14 +31,14 @@ export default function Card(props: Props) {
                 width={400}
                 height={400}
             />
-            <div className="flex">
+            <div className="flex items-center justify-center">
                 {props.python && (
                     <Image
                         className="m-2"
                         src="/python-logo-only.svg"
                         height={20}
                         width={20}
-                        alt="py"
+                        alt="Python"
                     />
                 )}
                 {props.php && (
@@ -47,7 +47,7 @@ export default function Card(props: Props) {
                         src="/php-svgrepo-com.svg"
                         height={20}
                         width={30}
-                        alt="py"
+                        alt="PHP"
                     />
                 )}
                 {props.js && (
@@ -56,7 +56,7 @@ export default function Card(props: Props) {
                         src="/js.svg"
                         height={20}
                         width={30}
-                        alt="py"
+                        alt="JS"
                     />
                 )}
                 {props.nextjs && (
@@ -65,7 +65,7 @@ export default function Card(props: Props) {
                         src="/nextjs2.png"
                         height={10}
                         width={30}
-                        alt="py"
+                        alt="NextJS"
 
                     />
                 )}
@@ -75,7 +75,7 @@ export default function Card(props: Props) {
                         src="/fastapi2.png"
                         height={20}
                         width={30}
-                        alt="py"
+                        alt="FastAPI"
                     />
                 )}
                 {props.mongodb && (
@@ -84,7 +84,7 @@ export default function Card(props: Props) {
                         src="/mongodb.svg"
                         height={10}
                         width={30}
-                        alt="py"
+                        alt="mongodb"
                     />
                 )}
                 {props.mariadb && (
@@ -93,7 +93,7 @@ export default function Card(props: Props) {
                         src="/mariadb2.png"
                         height={30}
                         width={50}
-                        alt="py"
+                        alt="mariadb"
                     />
                 )}
                 {props.bootstrap && (
@@ -102,7 +102,7 @@ export default function Card(props: Props) {
                         src="/Bootstrap_logo.svg"
                         height={10}
                         width={30}
-                        alt="py"
+                        alt="bootstrap"
                     />
                 )}
                 {props.tailwind && (
@@ -111,7 +111,16 @@ export default function Card(props: Props) {
                         src="/tailwind.png"
                         height={10}
                         width={30}
-                        alt="py"
+                        alt="tailwind"
+                    />
+                )}
+                {props.css && (
+                    <Image
+                        className="m-2 "
+                        src="/css.svg"
+                        height={10}
+                        width={30}
+                        alt="css"
                     />
                 )}
 

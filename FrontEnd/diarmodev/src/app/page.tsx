@@ -25,7 +25,7 @@ export default function Home() {
           Mi nombre es Diego Morales. Soy ingeniero electrónico y un apasionado por el desarrollo de soluciones web integrales para toda clase de problematicas.
         </p>
         <p className="flex max-w-xl text-xl"  >
-          Me especializo particularmente en el Stack NextJS-FastAPI-MongoDB
+          Me enfoco particularmente en el Stack NextJS-FastAPI-MongoDB
         </p>
       </div>
       <div className="flex flex-row space-x-10 mt-10">
@@ -98,7 +98,7 @@ export default function Home() {
       <div className="mt-20 font-semibold text-4xl">
         Proyectos
       </div>
-      <div className="flex flex-wrap items-start">
+      <div className="flex flex-wrap md:items-start items-center ">
         <Link href="/proyectos/lechuza"
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
@@ -106,22 +106,22 @@ export default function Home() {
             source="/lechuza.png"
             alt="lechuza"
             text="Sistema de gestion documental hecho enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
-            php js mariadb bootstrap
+            php js mariadb bootstrap css
 
           />
         </Link>
 
-        <Link href="/proyectos/lechuza"
+        <Link href="/proyectos/lechuipe"
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Lechuipe"
             source="/lechuipe.png"
             alt="lechuza"
             text="Sistema de gestion de información de red privada. Realizado enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
-            php js mariadb bootstrap
+            php js mariadb bootstrap css
           />
         </Link>
-        <Link href="/proyectos/lechuza"
+        <Link href="/proyectos/lechucao"
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="LechuCAO"
@@ -130,6 +130,16 @@ export default function Home() {
             text="Sistema de gestión documental CAO. Realizado con NextJS para el frontEnd y Fastapi para el BackEnd. Como base de datos se usó MongoDB"
             fastapi nextjs mongodb tailwind
 
+          />
+        </Link>
+        <Link href="/proyectos/bicharraco"
+          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
+          <Card
+            titulo="Bicharraco Films"
+            source="/bicharraco.png"
+            alt="lechuza"
+            text="Página web de una productora audiovisual de la Patagonia. Realizado enteramente con PHP, CSS y MariDB. No se utilizó ningún framework."
+            php bootstrap css 
           />
         </Link>
 
