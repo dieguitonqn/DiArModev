@@ -11,7 +11,7 @@ export default function Home() {
       <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full  after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-3xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert-0 rounded-3xl"
-          src="/Diego1.jpg"
+          src="/diarmodev_logo5.png"
           alt="Next.js Logo"
           width={230}
           height={60}
@@ -98,14 +98,28 @@ export default function Home() {
       <div className="mt-20 font-semibold text-4xl">
         Proyectos
       </div>
+      <div className="flex ml-0 border-b border-gray-500 pb-2 w-full">Full Stack</div>
+      
       <div className="flex flex-wrap md:items-start items-center ">
+      <Link href="/proyectos/mackyna"
+          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
+          <Card
+            titulo="Mackyna"
+            source="/mackyna.png"
+            alt="Mackyna"
+            text="Sistema de gestión para un gimnasio de la región. Se encarga de gestionar alumnos, turnos, planillas y pagos. Realizado enteramente con Nextjs."
+            nextjs tailwind 
+          />
+        </Link>
+      
+      
         <Link href="/proyectos/lechuza"
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Lechuza"
             source="/lechuza.png"
             alt="lechuza"
-            text="Sistema de gestion documental hecho enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
+            text="Sistema de gestion documental para el EPEN. Gestiona toda la documentación y la trazabilidad de las obras del EPEN. Hecho enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
             php js mariadb bootstrap css
 
           />
@@ -127,9 +141,35 @@ export default function Home() {
             titulo="LechuCAO"
             source="/lechucao.png"
             alt="lechuza"
-            text="Sistema de gestión documental CAO. Realizado con NextJS para el frontEnd y Fastapi para el BackEnd. Como base de datos se usó MongoDB"
+            text="Sistema de gestión documental Conforma a obra (CAO). Realizado con NextJS para el frontEnd y Fastapi para el BackEnd. Como base de datos se usó MongoDB"
             fastapi nextjs mongodb tailwind
 
+          />
+        </Link>
+
+        
+        
+      </div>
+      <div className="flex ml-0 border-b border-gray-500 pb-2 w-full mt-10">Front End</div>
+      <div className="flex flex-wrap md:items-start items-center ">
+      <Link href="/proyectos/mildestinos"
+          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
+          <Card
+            titulo="Mil Destinos"
+            source="/mildestinos.png"
+            alt="Mil Destinos"
+            text="Página web de una agencia de viajes de la Patagonia. Realizado enteramente con Nextjs."
+            nextjs tailwind 
+          />
+        </Link>
+        <Link href="/proyectos/hexa"
+          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
+          <Card
+            titulo="Hexa Automation SRL"
+            source="/hexaautomation.png"
+            alt="Hexa Autmoation SRL"
+            text="Página web de una empresa de servicios de tecnología de Oil&Gas de la Patagonia. Realizado enteramente con Nextjs."
+            nextjs tailwind 
           />
         </Link>
         <Link href="/proyectos/bicharraco"
@@ -142,8 +182,6 @@ export default function Home() {
             php bootstrap css 
           />
         </Link>
-
-
       </div>
 
     </main>
