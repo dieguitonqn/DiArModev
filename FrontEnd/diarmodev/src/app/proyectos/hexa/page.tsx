@@ -53,15 +53,16 @@ function Hexa() {
         />
         <br />
       </div>
-      <div className="p-6  w-full md:w-[75%] mx-auto justify-center">        La página incluye un diseño responsivo y moderno, con un enfoque en la
+      <div className="p-6  w-full md:w-[75%] mx-auto justify-center">        
+        La página incluye un diseño responsivo y moderno, con un enfoque en la
         usabilidad y la accesibilidad. Se utilizó Nextjs para el desarrollo del
         front-end, lo que permite una carga rápida y eficiente de las páginas.
         Además, se implementaron diversas funcionalidades interactivas
         utilizando Tailwind CSS, lo que mejora la experiencia del usuario.
         <br />
         <br />
-        La página incluye secciones como "Servicios", "Proyectos", "Contacto",
-        "Galería", "Casos de éxito" y "Sobre nosotros", lo que permite a los
+        La página incluye secciones como &quot;Servicios&quot;, &quot;Proyectos&quot;, &quot;Contacto&quot;,
+        &quot;Galería&quot;, &quot;Casos de éxito&quot; y &quot;Sobre nosotros&quot;, lo que permite a los
         usuarios conocer más sobre la empresa y sus servicios. También se
         implementaron formularios de contacto y secciones de testimonios para
         mejorar la interacción con los usuarios.
