@@ -22,7 +22,8 @@ export default function Home() {
 
       <div className="flex flex-col mt-12">
         <p className="flex max-w-xl text-xl">
-          Mi nombre es Diego Morales. Soy ingeniero electrónico y un apasionado por el desarrollo de soluciones web integrales para toda clase de problematicas.
+          Mi nombre es Diego Morales. Soy ingeniero electrónico y un apasionado por el desarrollo de soluciones web 
+          integrales para toda clase de problematicas y a medida del cliente.
         </p>
         <p className="flex max-w-xl text-xl"  >
           Me enfoco particularmente en el Stack NextJS-FastAPI-MongoDB
