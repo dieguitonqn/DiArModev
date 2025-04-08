@@ -153,7 +153,8 @@ export default function Home() {
       </div>
       <div className="flex ml-0 border-b border-gray-500 pb-2 w-full mt-10">Front End</div>
       <div className="flex flex-wrap md:items-start items-center ">
-      <Link href="/proyectos/mildestinos"
+      <Link href="https://mildestinos.tur.ar"
+          target="_blank"
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Mil Destinos"
@@ -163,7 +164,8 @@ export default function Home() {
             nextjs tailwind 
           />
         </Link>
-        <Link href="/proyectos/hexa"
+        <Link href="https://hexa-automation.com.ar/"
+          target="_blank"
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Hexa Automation SRL"
@@ -173,7 +175,8 @@ export default function Home() {
             nextjs tailwind 
           />
         </Link>
-        <Link href="/proyectos/bicharraco"
+        <Link href="http://bicharraco.com.ar"
+          target="_blank"
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Bicharraco Films"
