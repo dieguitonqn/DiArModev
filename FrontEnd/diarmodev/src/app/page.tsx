@@ -108,7 +108,7 @@ export default function Home() {
             titulo="Mackyna"
             source="/mackyna.png"
             alt="Mackyna"
-            text="Sistema de gestión para un gimnasio de la región. Se encarga de gestionar alumnos, turnos, planillas y pagos. Realizado enteramente con Nextjs."
+            text="Sistema de gestión moderno, dinámico y fácil de utilizar, para un gimnasio de la región. Se encarga de gestionar alumnos, turnos, planillas de entrenamientos y pagos. Realizado enteramente con Nextjs y TailwindCSS."
             nextjs tailwind 
           />
         </Link>
