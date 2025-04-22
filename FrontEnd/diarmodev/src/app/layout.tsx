@@ -35,11 +35,11 @@ export default function RootLayout({
         />
         <meta
           property="og:image:width"
-          content="1599"
+          content="777"
         />
         <meta
           property="og:image:height"
-          content="1599"
+          content="753"
         />
         <meta
           property="og:image:alt"
