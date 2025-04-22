@@ -23,7 +23,7 @@ export default function RootLayout({
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DiArMo dev" />
         <meta property="og:locale" content="es-AR" />
-        <meta property="og:url" content="https://mildestinos.tur.ar" />
+        <meta property="og:url" content="https://diarmodev.com" />
         <meta property="og:title" content="DiArMo dev" />
         <meta
           property="og:description"
