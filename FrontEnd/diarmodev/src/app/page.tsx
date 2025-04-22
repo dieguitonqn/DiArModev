@@ -106,7 +106,7 @@ export default function Home() {
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Mackyna"
-            source="/mackyna.png"
+            source="/Mackyna/mackyna.png"
             alt="Mackyna"
             text="Sistema de gestión moderno, dinámico y fácil de utilizar, para un gimnasio de la región. Se encarga de gestionar alumnos, turnos, planillas de entrenamientos y pagos. Realizado enteramente con Nextjs y TailwindCSS."
             nextjs tailwind 
@@ -118,7 +118,7 @@ export default function Home() {
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Lechuza"
-            source="/lechuza.png"
+            source="/lechuza/lechuza.png"
             alt="lechuza"
             text="Sistema de gestion documental para el EPEN. Gestiona toda la documentación y la trazabilidad de las obras del EPEN. Hecho enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
             php js mariadb bootstrap css
@@ -126,7 +126,7 @@ export default function Home() {
           />
         </Link>
 
-        <Link href="/proyectos/lechuipe"
+        <div 
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Lechuipe"
@@ -135,8 +135,8 @@ export default function Home() {
             text="Sistema de gestion de información de red privada. Realizado enteramente con PHP, CSS, JS y MariDB. No se utilizó ningún framework."
             php js mariadb bootstrap css
           />
-        </Link>
-        <Link href="/proyectos/lechucao"
+        </div>
+        <div 
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="LechuCAO"
@@ -146,27 +146,34 @@ export default function Home() {
             fastapi nextjs mongodb tailwind
 
           />
-        </Link>
+        </div>
 
         
         
       </div>
       <div className="flex ml-0 border-b border-gray-500 pb-2 w-full mt-10">Front End</div>
       <div className="flex flex-wrap md:items-start items-center ">
-      <Link href="https://mildestinos.tur.ar"
-          target="_blank"
-          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
-          <Card
-            titulo="Mil Destinos"
-            source="/mildestinos.png"
-            alt="Mil Destinos"
-            text="Página web de una agencia de viajes de la Patagonia. Realizado enteramente con Nextjs."
-            nextjs tailwind 
-          />
-        </Link>
+
+      <Link
+        href="https://mildestinos.tur.ar"
+        target="_blank"
+        className="relative hover:shadow-xl hover:shadow-slate-700 rounded-sm group"
+      >
+        <Card
+          titulo="Mil Destinos"
+          source="/mildestinos.png"
+          alt="Mil Destinos"
+          text="Página web de una agencia de viajes de la Patagonia. Realizado enteramente con Nextjs."
+          nextjs
+          tailwind
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+          <span className="text-white text-xl font-semibold">Visitar</span>
+        </div>
+      </Link>
         <Link href="https://hexa-automation.com.ar/"
           target="_blank"
-          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
+          className="relative hover:shadow-xl hover:shadow-slate-700 rounded-sm group">
           <Card
             titulo="Hexa Automation SRL"
             source="/hexaautomation.png"
@@ -174,10 +181,13 @@ export default function Home() {
             text="Página web de una empresa de servicios de tecnología de Oil&Gas de la Patagonia. Realizado enteramente con Nextjs."
             nextjs tailwind 
           />
+          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+          <span className="text-white text-xl font-semibold">Visitar</span>
+        </div>
         </Link>
         <Link href="http://bicharraco.com.ar"
           target="_blank"
-          className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
+          className="relative hover:shadow-xl hover:shadow-slate-700 rounded-sm group">
           <Card
             titulo="Bicharraco Films"
             source="/bicharraco.png"
@@ -185,6 +195,9 @@ export default function Home() {
             text="Página web de una productora audiovisual de la Patagonia. Realizado enteramente con PHP, CSS y MariDB. No se utilizó ningún framework."
             php bootstrap css 
           />
+          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+          <span className="text-white text-xl font-semibold">Visitar</span>
+        </div>
         </Link>
       </div>
 
