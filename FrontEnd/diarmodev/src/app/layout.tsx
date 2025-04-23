@@ -9,6 +9,18 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "DiArMo dev",
   description: "Desarrollo de soluciones web",
+  openGraph: {
+    title: "DiArMo dev",
+    description: "Desarrollador de soluciones web totalmente a medida, simples y potentes .",
+    url: "https://diarmodev.com",
+    siteName: "DiArMo dev",
+    images: [{
+      url:"https://diarmodev.com/diarmodev_logo_trans.png"
+    }],
+    locale: "es-AR",
+    type: "website",
+  },
+
 };
 
 export default function RootLayout({
@@ -19,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="es">
 
-<head>
+{/* <head>
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="DiArMo dev" />
         <meta property="og:locale" content="es-AR" />
@@ -52,7 +64,7 @@ export default function RootLayout({
         
         
         
-      </head>
+      </head> */}
 
       <body className={inter.className}>
         <Navbar />
