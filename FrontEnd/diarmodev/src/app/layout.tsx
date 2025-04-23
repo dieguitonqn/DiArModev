@@ -8,6 +8,26 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "DiArMo dev",
+  keywords: [
+    "Desarrollador web",
+    "Desarrollo web",
+    "Soluciones web",
+    "Desarrollo de software",
+    "Programación",
+    "Desarrollador de software",
+    "Desarrollador frontend",
+    "Desarrollador backend",
+    "Desarrollador fullstack",
+  ],
+  authors: [
+    {
+      name: "Diego Morales",
+      url: "https://diarmodev.com",
+    },
+  ],
+  creator: "Diego Morales",
+  publisher: "Diego Morales",
+  applicationName: "DiArMo dev",
   description: "Desarrollo de soluciones web",
   openGraph: {
     title: "DiArMo dev",
@@ -15,7 +35,11 @@ export const metadata: Metadata = {
     url: "https://diarmodev.com",
     siteName: "DiArMo dev",
     images: [{
-      url:"https://diarmodev.com/diarmodev_logo_trans.png"
+      url:"https://diarmodev.com/diarmodev_logo_trans.png",
+      width: 777,
+      height: 753,
+      alt: "DiArMo dev logo",
+      type: "image/png",
     }],
     locale: "es-AR",
     type: "website",
