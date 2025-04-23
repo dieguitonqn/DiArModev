@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     siteName: "DiArMo dev",
     images: [{
       url:"https://diarmodev.com/diarmodev_logo_trans.png",
-      width: 777,
-      height: 753,
+      width: 800,
+      height: 600,
       alt: "DiArMo dev logo",
-      type: "image/png",
+      
     }],
     locale: "es-AR",
     type: "website",
