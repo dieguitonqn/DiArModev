@@ -36,8 +36,8 @@ export const metadata: Metadata = {
     siteName: "DiArMo dev",
     images: [{
       url:"https://diarmodev.com/og-logo.png",
-      width: 800,
-      height: 600,
+      width: 1200,
+      height: 630,
       alt: "DiArMo dev logo",
     }],
     locale: "es-AR",
