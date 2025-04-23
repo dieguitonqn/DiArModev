@@ -11,7 +11,7 @@ const Navbar = () => {
                     <div className="flex flex-shrink-0 items-center">
                         <Image
                             className='mx-4'
-                            src="/diarmodev_logo_trans.png"
+                            src="/diarmodevlogotrans.png"
                             alt='Diarmo dev logo'
                             width={50}
                             height={50}

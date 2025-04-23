@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://diarmodev.com",
     siteName: "DiArMo dev",
     images: [{
-      url:"https://diarmodev.com/diarmodev_logo_trans.png",
+      url:"https://diarmodev.com/diarmodevlogotrans.png",
       width: 800,
       height: 600,
       alt: "DiArMo dev logo",

@@ -2,8 +2,52 @@
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./componets/card";
+import { Metadata } from "next";
 
+
+
+export const metadata: Metadata = {
+  title: "DiArMo dev",
+  keywords: [
+    "Desarrollador web",
+    "Desarrollo web",
+    "Soluciones web",
+    "Desarrollo de software",
+    "Programación",
+    "Desarrollador de software",
+    "Desarrollador frontend",
+    "Desarrollador backend",
+    "Desarrollador fullstack",
+  ],
+  authors: [
+    {
+      name: "Diego Morales",
+      url: "https://diarmodev.com",
+    },
+  ],
+  creator: "Diego Morales",
+  publisher: "Diego Morales",
+  applicationName: "DiArMo dev",
+  description: "Desarrollo de soluciones web",
+  openGraph: {
+    title: "DiArMo dev",
+    description: "Desarrollador de soluciones web totalmente a medida, simples y potentes .",
+    url: "https://diarmodev.com",
+    siteName: "DiArMo dev",
+    images: [{
+      url:"https://diarmodev.com/diarmodevlogotrans.png",
+      width: 800,
+      height: 600,
+      alt: "DiArMo dev logo",
+      
+    }],
+    locale: "es-AR",
+    type: "website",
+  },
+
+};
 export default function Home() {
+  
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
 
