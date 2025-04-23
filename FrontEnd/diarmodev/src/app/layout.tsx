@@ -7,7 +7,7 @@ import Navbar from "./componets/navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DiArMo dev",
+  title: "DiArMo dev | Desarrollo de Soluciones Web a Medida",
   keywords: [
     "Desarrollador web",
     "Desarrollo web",
@@ -30,21 +30,19 @@ export const metadata: Metadata = {
   applicationName: "DiArMo dev",
   description: "Desarrollo de soluciones web",
   openGraph: {
-    title: "DiArMo dev",
-    description: "Desarrollador de soluciones web totalmente a medida, simples y potentes .",
+    title: "DiArMo dev | Desarrollo de Soluciones Web a Medida",
+    description: "Desarrollador de soluciones web totalmente a medida, simples y potentes.",
     url: "https://diarmodev.com",
     siteName: "DiArMo dev",
     images: [{
-      url:"https://diarmodev.com/diarmodevlogotrans.png",
-      width: 800,
-      height: 600,
+      url:"https://diarmodev.com/og-logo.png",
+      width: 1200,
+      height: 630,
       alt: "DiArMo dev logo",
-      
     }],
     locale: "es-AR",
     type: "website",
   },
-
 };
 
 export default function RootLayout({
