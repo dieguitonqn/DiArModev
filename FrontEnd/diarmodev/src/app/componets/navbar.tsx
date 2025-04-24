@@ -24,23 +24,23 @@ const Navbar = () => {
                     <div className="hidden md:block">
                         <ul className="flex space-x-4">
                             <li>
-                                <Link href={"#"}
+                                <Link href={"/"}
                                     className="text-white hover:text-gray-300">
                                     Inicio
                                 </Link>
                             </li>
                             <li>
-                                <Link href={"#"}
+                                <Link href={"/aboutMe"}
                                     className="text-white hover:text-gray-300">
-                                    Acerca de
+                                    Acerca de mi
                                 </Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <Link href={"#"}
                                     className="text-white hover:text-gray-300">
                                     Contacto
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>

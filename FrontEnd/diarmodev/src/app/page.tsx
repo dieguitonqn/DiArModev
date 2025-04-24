@@ -2,8 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Card from "./componets/card";
-import { Metadata } from "next";
 
+import { ButtonRedes } from "./componets/buttonRedes";
 
 
 
@@ -35,7 +35,31 @@ export default function Home() {
         </p>
       </div>
       <div className="flex flex-row space-x-10 mt-10">
-        <Link
+      <ButtonRedes
+      link="https://www.linkedin.com/in/diego-morales-96417220/"
+      text="LinkedIn"
+      github={false}
+      linkedin={true}
+      instagram={false}
+      cv={false}
+      />
+      <ButtonRedes
+      link="https://github.com/dieguitonqn/"
+      text="Github"
+      github={true}
+      linkedin={false}
+      instagram={false}
+      cv={false}
+      />
+      <ButtonRedes
+      link="https://www.instagram.com/diarmodev"
+      text="Instagram"
+      github={false}
+      linkedin={false}
+      instagram={true}
+      cv={false}
+      />
+        {/* <Link
           className=" flex border-2 items-center border-slate-800 hover:shadow-lg  hover:shadow-slate-700 bg-black p-3 rounded-md text-slate-400 font-semibold text-xl"
           href="https://www.linkedin.com/in/diego-morales-96417220/"
           target="_blank"
@@ -54,10 +78,10 @@ export default function Home() {
           LinkedIn
 
 
-        </Link>
+        </Link> */}
 
 
-        <Link
+        {/* <Link
           className=" flex border-2 items-center border-slate-800 hover:shadow-lg  hover:shadow-slate-700 bg-black p-3 rounded-md text-slate-400 font-semibold text-xl"
           href="/CV_DiegoMorales.pdf"
           target="_blank"
@@ -97,7 +121,7 @@ export default function Home() {
 
           Github
 
-        </Link>
+        </Link> */}
       </div>
 
 
