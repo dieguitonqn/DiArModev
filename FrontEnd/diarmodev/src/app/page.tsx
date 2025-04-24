@@ -8,7 +8,7 @@ import { ButtonRedes } from "./componets/buttonRedes";
 
 
 export default function Home() {
-  
+
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
 
@@ -25,48 +25,49 @@ export default function Home() {
 
       </div>
 
-      <div className="flex flex-col mt-12">
-        <p className="flex max-w-xl text-xl">
-          Mi nombre es Diego Morales. Soy ingeniero electrónico y un apasionado por el desarrollo de soluciones web 
+      <div className="flex flex-col mt-12 w-screen p-2 sm:w-[75%] md:w-1/2 ">
+        <p className=" flex text-center text-xl">
+          Mi nombre es Diego Morales. Soy ingeniero electrónico y un apasionado por el desarrollo de soluciones web
           integrales para toda clase de problematicas y a medida del cliente.
         </p>
-        <p className="flex max-w-xl text-xl"  >
+        <br />
+        <p className="flex text-center text-xl mt-2"  >
           Me enfoco particularmente en el Stack NextJS-FastAPI-MongoDB
         </p>
       </div>
-      <div className="flex flex-row space-x-10 mt-10">
-      <ButtonRedes
-      link="https://www.linkedin.com/in/diego-morales-96417220/"
-      text="LinkedIn"
-      github={false}
-      linkedin={true}
-      instagram={false}
-      mail={false}
-      />
-      <ButtonRedes
-      link="https://github.com/dieguitonqn/"
-      text="Github"
-      github={true}
-      linkedin={false}
-      instagram={false}
-      mail={false}
-      />
-      <ButtonRedes
-      link="https://www.instagram.com/diarmodev"
-      text="Instagram"
-      github={false}
-      linkedin={false}
-      instagram={true}
-      mail={false}
-      />
-      <ButtonRedes
-      link="mailto:diegoariel.morales@gmail.com"
-      text="Email"
-      github={false}
-      linkedin={false}
-      instagram={false}
-      mail={true}
-      />
+      <div className="flex flex-wrap justify-center  gap-5 mt-10">
+        <ButtonRedes
+          link="https://www.linkedin.com/in/diego-morales-96417220/"
+          text="LinkedIn"
+          github={false}
+          linkedin={true}
+          instagram={false}
+          mail={false}
+        />
+        <ButtonRedes
+          link="https://github.com/dieguitonqn/"
+          text="Github"
+          github={true}
+          linkedin={false}
+          instagram={false}
+          mail={false}
+        />
+        <ButtonRedes
+          link="https://www.instagram.com/diarmodev"
+          text="Instagram"
+          github={false}
+          linkedin={false}
+          instagram={true}
+          mail={false}
+        />
+        <ButtonRedes
+          link="mailto:diegoariel.morales@gmail.com"
+          text="Email"
+          github={false}
+          linkedin={false}
+          instagram={false}
+          mail={true}
+        />
         {/* <Link
           className=" flex border-2 items-center border-slate-800 hover:shadow-lg  hover:shadow-slate-700 bg-black p-3 rounded-md text-slate-400 font-semibold text-xl"
           href="https://www.linkedin.com/in/diego-morales-96417220/"
@@ -137,20 +138,20 @@ export default function Home() {
         Proyectos
       </div>
       <div className="flex ml-0 border-b border-gray-500 pb-2 w-full">Full Stack</div>
-      
+
       <div className="flex flex-wrap md:items-start items-center ">
-      <Link href="/proyectos/mackyna"
+        <Link href="/proyectos/mackyna"
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Mackyna"
             source="/Mackyna/mackyna.png"
             alt="Mackyna"
             text="Sistema de gestión moderno, dinámico y fácil de utilizar, para un gimnasio de la región. Se encarga de gestionar alumnos, turnos, planillas de entrenamientos y pagos. Realizado enteramente con Nextjs y TailwindCSS."
-            nextjs tailwind 
+            nextjs tailwind
           />
         </Link>
-      
-      
+
+
         <Link href="/proyectos/lechuza"
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
@@ -163,7 +164,7 @@ export default function Home() {
           />
         </Link>
 
-        <div 
+        <div
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="Lechuipe"
@@ -173,7 +174,7 @@ export default function Home() {
             php js mariadb bootstrap css
           />
         </div>
-        <div 
+        <div
           className="hover:shadow-xl hover:shadow-slate-700 rounded-sm">
           <Card
             titulo="LechuCAO"
@@ -185,29 +186,29 @@ export default function Home() {
           />
         </div>
 
-        
-        
+
+
       </div>
       <div className="flex ml-0 border-b border-gray-500 pb-2 w-full mt-10">Front End</div>
       <div className="flex flex-wrap md:items-start items-center ">
 
-      <Link
-        href="https://mildestinos.tur.ar"
-        target="_blank"
-        className="relative hover:shadow-xl hover:shadow-slate-700 rounded-sm group"
-      >
-        <Card
-          titulo="Mil Destinos"
-          source="/mildestinos.png"
-          alt="Mil Destinos"
-          text="Página web de una agencia de viajes de la Patagonia. Realizado enteramente con Nextjs."
-          nextjs
-          tailwind
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-          <span className="text-white text-xl font-semibold">Visitar</span>
-        </div>
-      </Link>
+        <Link
+          href="https://mildestinos.tur.ar"
+          target="_blank"
+          className="relative hover:shadow-xl hover:shadow-slate-700 rounded-sm group"
+        >
+          <Card
+            titulo="Mil Destinos"
+            source="/mildestinos.png"
+            alt="Mil Destinos"
+            text="Página web de una agencia de viajes de la Patagonia. Realizado enteramente con Nextjs."
+            nextjs
+            tailwind
+          />
+          <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+            <span className="text-white text-xl font-semibold">Visitar</span>
+          </div>
+        </Link>
         <Link href="https://hexa-automation.com.ar/"
           target="_blank"
           className="relative hover:shadow-xl hover:shadow-slate-700 rounded-sm group">
@@ -216,11 +217,11 @@ export default function Home() {
             source="/hexaautomation.png"
             alt="Hexa Autmoation SRL"
             text="Página web de una empresa de servicios de tecnología de Oil&Gas de la Patagonia. Realizado enteramente con Nextjs."
-            nextjs tailwind 
+            nextjs tailwind
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-          <span className="text-white text-xl font-semibold">Visitar</span>
-        </div>
+            <span className="text-white text-xl font-semibold">Visitar</span>
+          </div>
         </Link>
         <Link href="http://bicharraco.com.ar"
           target="_blank"
@@ -230,11 +231,11 @@ export default function Home() {
             source="/bicharraco.png"
             alt="lechuza"
             text="Página web de una productora audiovisual de la Patagonia. Realizado enteramente con PHP, CSS y MariDB. No se utilizó ningún framework."
-            php bootstrap css 
+            php bootstrap css
           />
           <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-          <span className="text-white text-xl font-semibold">Visitar</span>
-        </div>
+            <span className="text-white text-xl font-semibold">Visitar</span>
+          </div>
         </Link>
       </div>
 
