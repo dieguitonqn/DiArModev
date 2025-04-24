@@ -12,7 +12,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="sticky top-0 bg-gray-950 p-4 shadow-slate-800 shadow-lg border-4 border-black border-b-slate-800">
+        <nav className="sticky top-0 bg-gray-950 p-4 shadow-slate-800 shadow-lg border-4 border-black border-b-slate-800 z-50">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center">
                     <div className="flex flex-shrink-0 items-center">
