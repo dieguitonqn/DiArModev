@@ -2,6 +2,7 @@ import React from 'react';
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { RiMailSendLine } from "react-icons/ri";
 import Link from "next/link";
 
 export interface ButtonRedesProps {
@@ -11,10 +12,10 @@ export interface ButtonRedesProps {
     github:boolean;
     linkedin:boolean;
     instagram:boolean;
-    cv:boolean;
+    mail:boolean;
 }
 
-export const ButtonRedes = ({link,text,github, linkedin, instagram, cv }:ButtonRedesProps ) => {
+export const ButtonRedes = ({link,text,github, linkedin, instagram, mail }:ButtonRedesProps ) => {
     return(
         <div>
         <Link
@@ -32,6 +33,9 @@ export const ButtonRedes = ({link,text,github, linkedin, instagram, cv }:ButtonR
             {instagram && (
                 <FaInstagram className='h-5 w-5'/>
             )}  
+            {mail &&
+                <RiMailSendLine className='h-5 w-5'/>
+            }
             </div>
             
 

@@ -41,7 +41,7 @@ export default function Home() {
       github={false}
       linkedin={true}
       instagram={false}
-      cv={false}
+      mail={false}
       />
       <ButtonRedes
       link="https://github.com/dieguitonqn/"
@@ -49,7 +49,7 @@ export default function Home() {
       github={true}
       linkedin={false}
       instagram={false}
-      cv={false}
+      mail={false}
       />
       <ButtonRedes
       link="https://www.instagram.com/diarmodev"
@@ -57,7 +57,15 @@ export default function Home() {
       github={false}
       linkedin={false}
       instagram={true}
-      cv={false}
+      mail={false}
+      />
+      <ButtonRedes
+      link="mailto:diegoariel.morales@gmail.com"
+      text="Email"
+      github={false}
+      linkedin={false}
+      instagram={false}
+      mail={true}
       />
         {/* <Link
           className=" flex border-2 items-center border-slate-800 hover:shadow-lg  hover:shadow-slate-700 bg-black p-3 rounded-md text-slate-400 font-semibold text-xl"
