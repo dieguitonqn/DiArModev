@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       <div className="flex flex-wrap justify-center  gap-5 mt-10">
         <ButtonRedes
-          link="https://www.linkedin.com/in/diego-morales-96417220/"
+          link="https://linkedin.com/in/diegoarielmorales/"
           text="LinkedIn"
           github={false}
           linkedin={true}
